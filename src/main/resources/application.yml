@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: profile-test
+#만약 application-prod.yml 파일을 로딩하고 싶다면, prod
+#프로필을 test 로 활성화하면 이 yml 파일의 설정은 무시된다
+#다른 설정도 활성화하고 싶다면 spring.profiles.include 를 사용
+  profiles:
+    active: test
+
+greeting:
+  message: this is main application.yml
